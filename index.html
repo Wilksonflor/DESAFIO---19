@@ -2,41 +2,39 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/e0d4a81d6c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Rachi</title>
 </head>
 
 <body>
-
     <header>
         <div id="title">
+            
             <div class="titleImg">
-                <img src="assets/img/logo.svg" alt="Logo Rachi">
+                <img src="assets/img/logo.svg" alt="Logo Rachi" />
             </div>
-            <h4>Rachi</h4>
 
-            <nav>
+            <nav class="NavMenu">
                 <ul>
-                    <li>Funcionalidade</li>
-                    <li>App</li>
-                    <li>Planos</li>
-                    <li>Contato</li>
+                    <li><a href="#">Funcionalidade</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
-
-
     <main>
-        <section>
-
+        <section id="sectionInicial">
             <div class="titleInfoContainer">
                 <div class="rachiSlogan">
                     <h1>Rachi, é tudo que você precisa em um só lugar</h1>
@@ -44,19 +42,17 @@
                 </div>
 
                 <div class="rachiImg">
-                    <img src="assets/img/illustration1.svg" alt="Menino no computador">
+                    <img src="assets/img/illustration1.svg" alt="Menino no computador" />
                 </div>
             </div>
-
         </section>
 
         <section>
-
             <h2>Como funciona</h2>
 
             <div class="containerIconFuncionamento">
                 <div class="funcionamentoBox">
-                    <i class="fa-regular fa-user-plus"></i>
+                    <i class="fa-duotone fa-user-group"></i>
                     <h4>Crie Conexões</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
@@ -71,7 +67,7 @@
 
                 <div class="funcionamentoBox">
                     <div class="funcionamentoBox">
-                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-light fa-shield-check"></i>
                         <h4>100% Gratuito</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
@@ -83,25 +79,91 @@
             <div class="containerApp">
                 <div class="boxApp">
                     <h3>Baixe nosso app para desfrutar mais!</h3>
-                    <p>Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae
-                        et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
+                    <p>
+                        Amet in elementum nulla scelerisque dui, egestas at. Elit
+                        consectetur turpis elementum amet vitae et etiam nec. Varius
+                        volutpat hac adipiscing tincidunt pretium.
+                    </p>
                     <div class="btnApp">
-                        <div class="btnDownload">
-                            
-                        </div>
+                        <div class="btnDownload"></div>
                     </div>
                 </div>
 
-                <div class="imgApp"></div>
+                <div class="imgApp">
+                    <div>
+                        <h3>Baixe nosso app para desfrutar mais!</h3>
+                        <p>
+                            Amet in elementum nulla scelerisque dui, egestas at. Elit
+                            consectetur turpis elementum amet vitae et etiam nec. Varius
+                            volutpat hac adipiscing tincidunt pretium.
+                        </p>
+
+                        <div class="appDownload">
+                            <div class="googlePlay">
+                                <p>GET IT ON</p>
+                                <h4>Google Play</h4>
+                                <i class="fa-brands fa-google-play"></i>
+                            </div>
+
+                            <div class="appStore">
+                                <p>GET IT ON</p>
+                                <h4>App Store</h4>
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="assets/img/New notifications-amico 1.png" alt="Nova notificação" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="nossoPlanos">
+            <h2>Nossos Planos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+            <div class="planosContainer">
+                <div class="planosBox">
+                    <h4>Bronze</h4>
+                    <h4>R$28/mês</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                    </p>
+                    <button>Assinar</button>
+                </div>
+
+                <div class="planosBox">
+                    <h4>Prata</h4>
+                    <h4>R$57/mês</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                    </p>
+                    <button>Assinar</button>
+                </div>
+                <div class="planosBox">
+                    <h4>Ouro</h4>
+                    <h4>R$94/mês</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                    </p>
+                    <button>Assinar</button>
+                </div>
             </div>
         </section>
 
     </main>
 
-
-
-
-    <footer></footer>
+    <footer>
+        <div>
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+            <div>
+                <input type="email" placeholder="Seu melhor e-mail">
+                <button>enviar</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

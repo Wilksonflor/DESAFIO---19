@@ -1,0 +1,135 @@
+:root {
+    --azulPadrao--: #0f9afe;
+    --brancototal--: #fff;
+    --branco200--: #eff8ff;
+    --cinzatotal--: #6e7275;
+    --cinzaclaro--: #dbdbdb;
+    --cinza200: #293145;
+    --fontSora: 'Sora', sans-serif;
+    --fontRoboto: 'Roboto', sans-serif;
+    --fontInter: 'Inter', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+header.ativo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--cinzaclaro--);
+}
+
+#title {
+    margin: 1em 0 1.1em;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleImg img {
+    margin-left: 50px;
+}
+
+header #title .NavMenu {
+    width: 30%;
+    margin-right: 30px;
+}
+
+header #title .NavMenu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0.7em;
+    list-style: none;
+}
+
+header #title .NavMenu ul li a {
+    text-decoration: none;
+    font-family: var(--fontInter);
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--cinzatotal--);
+    transition: .2s ease-in-out;
+}
+
+header #title .NavMenu ul li a:hover {
+    color: var(--cinza200);
+}
+
+/* Finalizei a parte do Header e menu */
+
+#sectionInicial {}
+
+.titleInfoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco200--);
+}
+
+.rachiSlogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 60%;
+    height: 50vh;
+    text-align: center;
+    border-right: 1px dashed var(--cinzatotal--);
+
+}
+
+.rachiSlogan h1 {
+    width: 50%;
+    font-size: 3em;
+    font-family: var(--fontSora);
+}
+
+.rachiSlogan button {
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    color: var(--branco200--);
+    font-family: var(--fontInter);
+    width: 200px;
+    height: 56px;
+    background: #0F9AFE;
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    border-radius: 50px;
+    transition: .5s;
+    opacity: .9;
+}
+
+.rachiSlogan button:hover {
+    opacity: 1;
+}
+
+.rachiImg {
+    width: 40%;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.rachiImg img {
+    width: 62%;
+    height: auto;
+
+}
