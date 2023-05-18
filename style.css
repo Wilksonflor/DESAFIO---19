@@ -133,3 +133,7 @@ header #title .NavMenu ul li a:hover {
     height: auto;
 
 }
+
+#funcionalidades{
+    border: 2px solid red;
+}
