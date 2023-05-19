@@ -71,10 +71,13 @@ header #title .NavMenu ul li a:hover {
     color: var(--cinza200);
 }
 
-/* Finalizei a parte do Header e menu */
+/* Finalizei a parte do Header e menu desktop*/
 
-#sectionInicial {}
-
+/* Menu mobile */
+.MobileNav{
+    display: none;
+}
+/*  */
 .titleInfoContainer {
     width: 100%;
     display: flex;
@@ -243,4 +246,21 @@ header #title .NavMenu ul li a:hover {
 .imgApp{
     width: 50%;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Parte responsiva */
+@media screen and (min-width: 768px) {
+    .NavMenu{
+        display: none;
+    }
+    .MobileNav{
+        display: flex;
+    }
 }
