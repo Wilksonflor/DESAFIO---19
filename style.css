@@ -133,3 +133,114 @@ header #title .NavMenu ul li a:hover {
     height: auto;
 
 }
+
+
+/* Inicio da segunda section */
+#funcionalidades{
+    width: 100%;
+    height: auto;
+    margin-block: 30px;
+    text-align: center;
+}
+#funcionalidades h2{
+    font-family: 'Sora', sans-serif;
+    margin-top: 3em;
+}
+
+.containerIconFuncionamento{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.funcionamentoBox{
+    text-align: center;
+    height: 150px;
+    margin-top: 30px;
+    padding: 1em;
+}
+.funcionamentoBox h4{
+    font-size: 1em;
+    font-family: 'Sora', sans-serif;
+    margin-block: 1em;
+}
+.funcionamentoBox p{
+   margin: 0 auto;
+    font-family: 'Sora', sans-serif;
+    font-size: .9em;
+    width: 50%;
+}
+.funcionamentoBox i{
+    font-size: 1.5em;
+    color: var(--azulPadrao--);
+}
+
+/* terminou a segunda section */
+
+
+/*  */
+#app{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3em; 
+    background-color: var(--branco200--)
+}
+
+.containerApp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boxApp{
+    margin: 0 auto;
+    text-align: center;
+}
+.boxApp h3{
+    font-family: 'Sora', sans-serif;
+    font-size: 2em;
+}
+.boxApp p{
+    margin: 10px auto;
+    width: 50%;
+    font-family: 'Sora', sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+}
+.appDownload{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+}
+.lojaDownload{
+    width: 30%;
+    height: auto;
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cinza200);
+    border-radius: 1em;
+    color: var(--brancototal--);
+}
+.lojaText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.iconDownload i{
+    font-size: 1.2em;
+}
+.imgApp{
+    width: 50%;
+    text-align: center;
+}
