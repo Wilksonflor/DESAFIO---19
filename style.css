@@ -258,9 +258,9 @@ header #title .NavMenu ul li a:hover {
 
 /* Parte responsiva */
 @media screen and (min-width: 768px) {
-    .NavMenu{
+    /* .NavMenu{
         display: none;
-    }
+    } */
     .MobileNav{
         display: flex;
     }
