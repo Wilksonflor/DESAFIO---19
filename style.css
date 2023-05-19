@@ -74,7 +74,8 @@ header #title .NavMenu ul li a:hover {
 /* Finalizei a parte do Header e menu desktop*/
 
 /* Menu mobile */
-.MobileNav{
+.MobileNav,
+.MobileNavList{
     display: none;
 }
 /*  */
