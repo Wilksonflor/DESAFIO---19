@@ -21,13 +21,15 @@ header {
     width: 100%;
     height: 60px;
     border-bottom: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
 }
 
 header.ativo {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--cinzaclaro--);
+    background-color: var(--branco200--);
+    transform: translateY(-10%);
 }
 
 #title {
@@ -48,7 +50,7 @@ header #title .NavMenu {
     margin-right: 30px;
 }
 
-header #title .NavMenu ul {
+header #title .NavMenu .navList {
     width: 100%;
     display: flex;
     align-items: center;
@@ -74,13 +76,45 @@ header #title .NavMenu ul li a:hover {
 /* Finalizei a parte do Header e menu desktop*/
 
 /* Menu mobile */
-.MobileNav,
-.MobileNavList {
+.MobileNav {
     display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: -1;
+    transition: .4s ease-in-out;
+
+}
+
+.MobileNavList {
+    /* display: none; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0.7em;
+    list-style: none;
+
+}
+.MobileNavList li{
+    padding-block: 30px;
+}
+.MobileNavList li a {
+    text-decoration: none;
+    font-family: var(--fontInter);
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--cinzatotal--);
+    transition: .2s ease-in-out;
 }
 
 #btnMobile {
     display: none;
+    border: none;
+    margin-right: 30px;
+    cursor: pointer;
 }
 
 /*  */
@@ -261,24 +295,26 @@ i {
     width: 50%;
     text-align: center;
 }
+
 /* -------------Box dos Planos----------------- */
 
-#nossoPlanos{
+#nossoPlanos {
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
-#nossoPlanos > h2{
+
+#nossoPlanos>h2 {
     font-family: var(--fontSora);
     font-size: 2em;
 }
 
-#nossoPlanos p{
+#nossoPlanos p {
     margin-block: 1em;
     font-family: var(--fontInter);
 }
 
-.planosContainer{
+.planosContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +322,7 @@ i {
     gap: 30px;
 }
 
-.planosBox{
+.planosBox {
     width: 370px;
     height: 471px;
 
@@ -298,24 +334,28 @@ i {
     border-radius: .5em;
 
 }
-.planosBox h4{
+
+.planosBox h4 {
     font-family: var(--fontSora);
     font-size: 1.5em;
     margin-block: 50px;
 }
-.planosBox .real{
+
+.planosBox .real {
     font-size: .3em;
 }
 
-.planosBox > h2{
+.planosBox>h2 {
     font-size: 60px;
     font-family: var(--fontRoboto);
 
 }
-.planosBox .mes{
+
+.planosBox .mes {
     font-size: .5em;
 }
-.planosBox p{
+
+.planosBox p {
     color: var(--cinzatotal--);
     font-family: var(--fontInter);
     font-weight: 400;
@@ -324,7 +364,7 @@ i {
 
 
 
-.planosBox button{
+.planosBox button {
     cursor: pointer;
     background-color: var(--azulPadrao--);
     color: #fff;
@@ -336,24 +376,28 @@ i {
     border-radius: 8px;
     transition: .5s ease-in-out;
 }
-.planosBox button:hover{
+
+.planosBox button:hover {
     background-color: #fff;
     color: var(--azulPadrao--);
     border: 1px solid var(--azulPadrao--);
 }
 
-.boxCinza{
+.boxCinza {
     background-color: var(--cinza200);
     color: #fff;
 }
-.boxCinza h4{
+
+.boxCinza h4 {
     font-size: 2.5em;
     margin-bottom: 15px;
 }
-.boxCinza p{
+
+.boxCinza p {
     color: #fff;
 }
-.boxCinza > .preferido{
+
+.boxCinza>.preferido {
     width: 115px;
     height: 25px;
 
@@ -369,12 +413,13 @@ i {
 
     text-transform: uppercase;
     border-radius: 1em;
-   
+
 }
+
 /* ------------------------------ */
 
 /* ------------------------- */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -387,22 +432,25 @@ footer{
     background-repeat: no-repeat;
     color: var(--branco200--);
 }
-footer h2{
+
+footer h2 {
     font-size: 2em;
     font-family: var(--fontRoboto);
 }
-footer p{
+
+footer p {
     font-family: var(--fontInter);
     font-weight: 400;
     color: #DBDBDB;
 }
-.formFooter{
+
+.formFooter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.formFooter #form input{
+.formFooter #form input {
     width: 300px;
     padding: 2px;
     background-color: transparent;
@@ -412,12 +460,13 @@ footer p{
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    
+
 }
-.formFooter #form button{
+
+.formFooter #form button {
     width: 80px;
     height: 30px;
-    
+
     text-transform: capitalize;
     font-family: var(--fontRoboto);
     font-weight: bold;
@@ -430,23 +479,55 @@ footer p{
     border-radius: 8px;
     transition: .5s ease-in-out;
 }
-.formFooter #form button:hover{
+
+.formFooter #form button:hover {
     background-color: #fff;
     color: var(--azulPadrao--);
     border: 1px solid var(--azulPadrao--);
 }
-.formFooter #form input::placeholder{
+
+.formFooter #form input::placeholder {
     color: #fff;
 }
 
 /* Parte responsiva */
-@media screen and (min-width: 768px) {
-
-    /* .NavMenu{
-        display: none;
-    } */
+@media only screen and (max-width: 768px) {
+    header #title .NavMenu .navList, 
     .MobileNav {
+        display: none;
+    }
+
+    .MobileNavList {
         display: flex;
     }
 
+    #btnMobile.active~.MobileNav,
+    #btnMobile {
+        display: block;
+    }
+
+    #title {
+        margin: 0;
+    }
+
+    #btnMobile i {
+        font-size: 1.5rem;
+    }
+    .titleInfoContainer{
+        border: none;
+    }
+
+    .rachiSlogan{
+        border: none;
+        width: 100%;
+        padding-inline: 11px;
+    }
+    .rachiSlogan h1{
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .rachiImg{
+        display: none;
+    }
+   
 }
