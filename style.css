@@ -75,9 +75,14 @@ header #title .NavMenu ul li a:hover {
 
 /* Menu mobile */
 .MobileNav,
-.MobileNavList{
+.MobileNavList {
     display: none;
 }
+
+#btnMobile {
+    display: none;
+}
+
 /*  */
 .titleInfoContainer {
     width: 100%;
@@ -140,18 +145,19 @@ header #title .NavMenu ul li a:hover {
 
 
 /* Inicio da segunda section */
-#funcionalidades{
+#funcionalidades {
     width: 100%;
     height: auto;
     margin-block: 30px;
     text-align: center;
 }
-#funcionalidades h2{
+
+#funcionalidades h2 {
     font-family: 'Sora', sans-serif;
     margin-top: 3em;
 }
 
-.containerIconFuncionamento{
+.containerIconFuncionamento {
     width: 100%;
     height: auto;
     display: flex;
@@ -160,24 +166,27 @@ header #title .NavMenu ul li a:hover {
     flex-wrap: wrap;
 }
 
-.funcionamentoBox{
+.funcionamentoBox {
     text-align: center;
     height: 150px;
     margin-top: 30px;
     padding: 1em;
 }
-.funcionamentoBox h4{
+
+.funcionamentoBox h4 {
     font-size: 1em;
     font-family: 'Sora', sans-serif;
     margin-block: 1em;
 }
-.funcionamentoBox p{
-   margin: 0 auto;
+
+.funcionamentoBox p {
+    margin: 0 auto;
     font-family: 'Sora', sans-serif;
     font-size: .9em;
     width: 50%;
 }
-.funcionamentoBox i{
+
+.funcionamentoBox i {
     font-size: 1.5em;
     color: var(--azulPadrao--);
 }
@@ -186,38 +195,42 @@ header #title .NavMenu ul li a:hover {
 
 
 /*  */
-#app{
+#app {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 3em; 
+    padding: 3em;
     background-color: var(--branco200--)
 }
 
-.containerApp{
+.containerApp {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
-.boxApp{
+
+.boxApp {
     margin: 0 auto;
     text-align: center;
 }
-.boxApp h3{
+
+.boxApp h3 {
     font-family: 'Sora', sans-serif;
     font-size: 2em;
 }
-.boxApp p{
+
+.boxApp>p {
     margin: 10px auto;
     width: 50%;
     font-family: 'Sora', sans-serif;
     font-size: .9em;
     font-weight: 400;
 }
-.appDownload{
+
+.appDownload {
     width: 50%;
     display: flex;
     align-items: center;
@@ -225,43 +238,215 @@ header #title .NavMenu ul li a:hover {
     margin: 0 auto;
     gap: 40px;
 }
-.lojaDownload{
-    width: 30%;
-    height: auto;
+
+.lojaDownload {
+    cursor: pointer;
+    width: 200px;
+    max-width: 30%;
+    height: 60px;
     margin-block: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: var(--cinza200);
     border-radius: 1em;
     color: var(--brancototal--);
 }
-.lojaText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+
+i {
+    font-size: 2em;
 }
-.iconDownload i{
-    font-size: 1.2em;
-}
-.imgApp{
+
+.imgApp {
     width: 50%;
     text-align: center;
 }
+/* -------------Box dos Planos----------------- */
+
+#nossoPlanos{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+#nossoPlanos > h2{
+    font-family: var(--fontSora);
+    font-size: 2em;
+}
+
+#nossoPlanos p{
+    margin-block: 1em;
+    font-family: var(--fontInter);
+}
+
+.planosContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.planosBox{
+    width: 370px;
+    height: 471px;
+
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    background-color: var(--branco200--);
+    font-family: var(--fontSora);
+    border-radius: .5em;
+
+}
+.planosBox h4{
+    font-family: var(--fontSora);
+    font-size: 1.5em;
+    margin-block: 50px;
+}
+.planosBox .real{
+    font-size: .3em;
+}
+
+.planosBox > h2{
+    font-size: 60px;
+    font-family: var(--fontRoboto);
+
+}
+.planosBox .mes{
+    font-size: .5em;
+}
+.planosBox p{
+    color: var(--cinzatotal--);
+    font-family: var(--fontInter);
+    font-weight: 400;
+    padding: 1em;
+}
 
 
 
+.planosBox button{
+    cursor: pointer;
+    background-color: var(--azulPadrao--);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 30px;
+    font-family: var(--fontRoboto);
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .5s ease-in-out;
+}
+.planosBox button:hover{
+    background-color: #fff;
+    color: var(--azulPadrao--);
+    border: 1px solid var(--azulPadrao--);
+}
 
+.boxCinza{
+    background-color: var(--cinza200);
+    color: #fff;
+}
+.boxCinza h4{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.boxCinza p{
+    color: #fff;
+}
+.boxCinza > .preferido{
+    width: 115px;
+    height: 25px;
 
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: .5em;
+    background-color: var(--azulPadrao--);
+    color: #fff;
 
+    font-family: var(--fontRoboto);
+    font-weight: 600;
+    font-size: .7em;
 
+    text-transform: uppercase;
+    border-radius: 1em;
+   
+}
+/* ------------------------------ */
+
+/* ------------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+
+    background-image: url('./assets/img/bgfooter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--branco200--);
+}
+footer h2{
+    font-size: 2em;
+    font-family: var(--fontRoboto);
+}
+footer p{
+    font-family: var(--fontInter);
+    font-weight: 400;
+    color: #DBDBDB;
+}
+.formFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formFooter #form input{
+    width: 300px;
+    padding: 2px;
+    background-color: transparent;
+    font-family: var(--fontRoboto);
+
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    
+}
+.formFooter #form button{
+    width: 80px;
+    height: 30px;
+    
+    text-transform: capitalize;
+    font-family: var(--fontRoboto);
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background-color: var(--azulPadrao--);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: .5s ease-in-out;
+}
+.formFooter #form button:hover{
+    background-color: #fff;
+    color: var(--azulPadrao--);
+    border: 1px solid var(--azulPadrao--);
+}
+.formFooter #form input::placeholder{
+    color: #fff;
+}
 
 /* Parte responsiva */
 @media screen and (min-width: 768px) {
-    .NavMenu{
+
+    /* .NavMenu{
         display: none;
-    }
-    .MobileNav{
+    } */
+    .MobileNav {
         display: flex;
     }
+
 }
