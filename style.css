@@ -28,6 +28,7 @@ header.ativo {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     background-color: var(--branco200--);
     transform: translateY(-10%);
 }
