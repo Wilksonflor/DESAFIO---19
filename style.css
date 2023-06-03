@@ -489,7 +489,9 @@ footer p {
 .formFooter #form input::placeholder {
     color: #fff;
 }
-
+/* .sectionInicial, #app, #nossoPlanos, #funcionalidades,footer{
+    visibility: hidden;
+} */
 /* Parte responsiva */
 @media only screen and (max-width: 768px) {
     header #title .NavMenu .navList, 
